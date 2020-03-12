@@ -30,10 +30,11 @@ function menu() {
                 })
                 break;
             case "Exit":
-                console.log("succesfully")
-                break;
-                
-            
+                fs.writeFile("main.html",path,error => {
+                        console.log ("Html generated");
+                    })
+  
         }
     })
 }
+
